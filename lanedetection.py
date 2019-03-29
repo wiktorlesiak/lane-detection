@@ -16,6 +16,7 @@ while (1):
     # grayscale video
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     # hsv mask
+    # TODO: FIX THE MASKING 
     lower = np.array([0, 0, 212])
     upper = np.array([131, 255, 255])
     mask = cv2.inRange(hsv, lower, upper)
